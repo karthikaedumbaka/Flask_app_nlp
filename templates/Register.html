@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NLP | Register page</title>
+</head>
+<body>
+<h1>NLP APP</wo></h1>
+<h3>register Here </h3>
+{% if message %}
+<p style="color: red">{{ message }} </p>
+{% endif %}
+<form action="/perform_register" method="post">
+    <label>Name</label><br>
+    <input type="text" name ="user_name" required><br>
+    <label>Email</label><br>
+    <input type="email" name ="user_email" required><br>
+    <label>Password</label><br>
+    <input type="password" name ="user_password" required><br>
+    <input type="submit" value="Register" >
+
+    <p>Already a Member ? <a href="/"> Login Here</a></p>
+</form>
+
+
+
+
+</body>
+</html>
